@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeeksforGeeks Replica</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function myFunc() {
+        window.location.href = "https://docs.python.org/3/";
+    }
+    function lightMode() {
+        var element = document.body;
+        element.classList.toggle("light-mode");
+     }
+     function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+      
+     
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- navbar -->
+            <nav>
+                <img src="gfg-gg-logo.svg" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Practice</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <button onclick="lightMode()">Toggle light mode</button>
+
+
+
+    <!-- main body -->
+    <main class="main-content">
+        <div class="content-container">
+            <h2>Python Tutorial | Learn Python Programming</h2>
+            <h4>Last Updated : 25 Jun, 2024</h4>
+            <hr>
+            <h4>This Programming Language Python git checkout -- .
+   is very well suited for beginners and also for experienced programmers. This specially designed free Python tutorial will help you learn Python programming most efficiently, with all topics from basics to advanced (like Web-scraping, Django, Learning, etc.) with examples.</h4>
+
+            <h2>What is Python?</h2>
+            <p>Python is a high-level, general-purpose, and very popular programming language. Python programming language (latest Python 3) is being used in web development, and Machine Learning applications, along with all cutting-edge technology in Software Industry.<span id="dots">...</span><span id="more"> Python language is being used by almost all tech-giant companies like - Google, Amazon, Facebook, Instagram, Dropbox, Uber.Often, programmers fall in love with Python because of the increased productivity it provides. Since there is no compilation step, the edit-test-debug cycle is incredibly fast. Debugging Python programs is easy: a bug or bad input will never cause a segmentation fault. Instead, when the interpreter discovers an error, it raises an exception. When the program doesn't catch the exception, the interpreter prints a stack trace. A source level debugger allows inspection of local and global variables, evaluation of arbitrary expressions, setting breakpoints, stepping through the code a line at a time, and so on. The debugger is written in Python itself, testifying to Python's introspective power. On the other hand, often the quickest way to debug a program is to add a few print statements to the source: the fast edit-test-debug cycle makes this simple approach very effective.....
+
+
+
+            </span>
+                <button onclick="readMore()" id="myBtn">Read more</button>
+            </p>
+            <h2>Writing your first Python Program to Learn Python Programming</h2>
+            <p>There are two ways you can execute your Python program:</p>
+
+
+            <ol>
+                <li>First, we write a program in a file and run it one time.</li>
+                <li>Second, run a code line by line.</li>
+            </ol>
+            <p>Here we provided the latest Python 3 version compiler where you can edit and compile your written code directly with just one click of the RUN Button. So test yourself with Python first exercises.</p>
+            <img src="ss1.png" alt="prog" class="prog" width="70%">
+
+            <button onclick="myFunc()">Documentation</button>
+
+            <h2>Table of Content</h2>
+            <ul>
+                <li>What is Python?</li>
+                <li>Writing your first Python Program</li>
+                <li>Setting up Python</li>
+                <li>Getting Started with Python Programming</li>
+                <li>Python Input/Output</li>
+                <li>Python Data Types</li>
+                <li>Python Operators</li>
+                <li>Python Conditional Statement</li>
+                <li>Python Loops</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>

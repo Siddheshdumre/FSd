@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #131417;
+    color: white;
+}
+.light-mode{
+    background-color: grey;
+  
+}
+header {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+    flex-grow: 1;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .logo {
+    width: 5%;
+    height: auto;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-container {
+    max-width: 800px;
+    text-align: left;
+}
+#more {display: none;}
+
+
+.main-content h2, .main-content h4, .main-content p, .main-content ul {
+    color: white;
+}
+.main-content img.prog {
+    margin: 20px auto;
+}
+
+::selection {
+    background-color: #308D46;
+    color: white;
+}
+.main-content button{
+    color: white;
+    background-color:#308D46 ;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+
+
+
+}
+.main-content button:hover{
+    background-color: white; /* Green */
+    color:#308D46 ;
+  
+}
+  
